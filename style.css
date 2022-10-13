@@ -1,13 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-family: sans-serif;
 }
 
 body {
-  background: -webkit-gradient(linear, left top, right top, from(#00C9FF), to(#92FE9D));
   background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
 }
 
@@ -17,17 +16,14 @@ body {
   opacity: 0.7;
   padding: 20px 0;
 }
-
 #nav1 ul {
   text-align: center;
 }
-
 #nav1 ul li {
   list-style: none;
   display: inline-block;
   margin-left: 20px;
 }
-
 #nav1 ul li a {
   color: white;
   text-decoration: none;
@@ -37,34 +33,25 @@ body {
 /*Nav  2*/
 #nav2 {
   margin-top: 20px;
-  background-color: #ff4f4f;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  background-color: rgb(255, 79, 79);
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   height: auto;
   padding: 10px 15px;
 }
-
 #nav2 #logo1 {
   font-size: 30px;
   letter-spacing: 0.6em;
   padding-left: 10px;
   font-family: sans-serif;
 }
-
 #nav2 ul li {
   display: inline-block;
   list-style: none;
 }
-
 #nav2 ul li a {
-  color: black;
+  color: rgb(0, 0, 0);
   text-decoration: none;
   padding: 5px;
   margin: 5px 10px;
@@ -77,15 +64,79 @@ body {
   margin-top: 20px;
   text-align: center;
 }
-
 #nav3 ul li {
   padding: 5px 0;
   margin: 7px 0;
 }
-
 #nav3 ul li a {
   text-decoration: none;
   font-size: 17px;
   color: #22577A;
 }
-/*# sourceMappingURL=style.css.map */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#nav4 {
+  background: #272727;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navMenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.navMenu a {
+  color: #f6f4e6;
+  text-decoration: none;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+  width: 80px;
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:hover {
+  color: #fddb3a;
+}
+
+.navMenu .dot {
+  width: 6px;
+  height: 6px;
+  background: #fddb3a;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.2s ease-in-out;
+}
+
+.navMenu a:nth-child(1):hover ~ .dot {
+  transform: translateX(30px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(2):hover ~ .dot {
+  transform: translateX(110px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(3):hover ~ .dot {
+  transform: translateX(200px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}
+
+.navMenu a:nth-child(4):hover ~ .dot {
+  transform: translateX(285px);
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+}/*# sourceMappingURL=style.css.map */
