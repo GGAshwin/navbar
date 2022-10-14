@@ -16,14 +16,17 @@ body {
   opacity: 0.7;
   padding: 20px 0;
 }
+
 #nav1 ul {
   text-align: center;
 }
+
 #nav1 ul li {
   list-style: none;
   display: inline-block;
   margin-left: 20px;
 }
+
 #nav1 ul li a {
   color: white;
   text-decoration: none;
@@ -33,7 +36,9 @@ body {
 /*Nav  2*/
 #nav2 {
   margin-top: 20px;
-  background-color: rgb(255, 79, 79);
+  background-color: #ff4f4f;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -73,70 +78,4 @@ body {
   font-size: 17px;
   color: #22577A;
 }
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#nav4 {
-  background: #272727;
-  font-family: "Montserrat", sans-serif;
-}
-
-.navMenu {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.navMenu a {
-  color: #f6f4e6;
-  text-decoration: none;
-  font-size: 1.2em;
-  text-transform: uppercase;
-  font-weight: 500;
-  display: inline-block;
-  width: 80px;
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:hover {
-  color: #fddb3a;
-}
-
-.navMenu .dot {
-  width: 6px;
-  height: 6px;
-  background: #fddb3a;
-  border-radius: 50%;
-  opacity: 0;
-  transform: translateX(30px);
-  transition: all 0.2s ease-in-out;
-}
-
-.navMenu a:nth-child(1):hover ~ .dot {
-  transform: translateX(30px);
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(2):hover ~ .dot {
-  transform: translateX(110px);
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(3):hover ~ .dot {
-  transform: translateX(200px);
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}
-
-.navMenu a:nth-child(4):hover ~ .dot {
-  transform: translateX(285px);
-  transition: all 0.2s ease-in-out;
-  opacity: 1;
-}/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */
